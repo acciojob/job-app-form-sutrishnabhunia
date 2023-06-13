@@ -1,36 +1,47 @@
-<form method="POST" action="submit_job_application.php">
-  <label for="name">Name*</label>
-  <input type="text" id="name" name="name" required>
-
-  <label for="email">Email*</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="gender">Gender*</label><br>
-  <input type="radio" id="male" name="gender" value="male" required>
-  <label for="male">Male</label><br>
-  <input type="radio" id="female" name="gender" value="female" required>
-  <label for="female">Female</label><br>
-  <input type="radio" id="other" name="gender" value="other" required>
-  <label for="other">Other</label><br>
-
-  <label for="laptop">Laptop Brand*</label>
-  <select id="laptop" name="laptop" required>
-    <option value="Apple">Apple</option>
-    <option value="Asus">Asus</option>
-    <option value="HP">HP</option>
-  </select>
-
-  <label for="age">Age*</label>
-  <input type="number" id="age" name="age" required>
-
-  <label for="dob">DOB*</label>
-  <input type="date" id="dob" name="dob" required>
-
-  <label for="password">Password*</label>
-  <input type="password" id="password" name="password" required>
-
-  <label for="portfolio">Portfolio URL</label>
-  <input type="url" id="portfolio" name="portfolio">
-
-  <input type="submit" value="Submit" id="submit-button">
+<html>
+<head>
+<title>Job Application Form</title>
+</head>
+<body>
+<form method="post" action="submit.php">
+<div class="form-group">
+<label for="name">Name</label>
+<input type="text" id="name" name="name" placeholder="Enter your name" required>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+</div>
+<div class="form-group">
+<label for="gender">Gender</label>
+<input type="radio" id="male" name="gender" value="male"> Male
+<input type="radio" id="female" name="gender" value="female"> Female
+</div>
+<div class="form-group">
+<label for="laptop">Laptop Brand</label>
+<select id="laptop" name="laptop">
+<option value="Apple">Apple</option>
+<option value="Asus">Asus</option>
+<option value="HP">HP</option>
+</select>
+</div>
+<div class="form-group">
+<label for="age">Age</label>
+<input type="number" id="age" name="age" placeholder="Enter your age" required>
+</div>
+<div class="form-group">
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="dob" placeholder="Enter your date of birth" required>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input type="password" id="password" name="password" placeholder="Enter your password" required>
+</div>
+<div class="form-group">
+<label for="portfolio">Portfolio URL</label>
+<input type="text" id="portfolio" name="portfolio" placeholder="Enter your portfolio URL">
+</div>
+<input type="submit" value="Submit">
 </form>
+</body>
+</html>
